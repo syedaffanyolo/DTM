@@ -115,9 +115,10 @@ class Malls: UIViewController {
                     
                     /// grand venice
                     
-                    self.cards[0].setTitle(json.gvname, for: .normal)
+                     self.cards[0].setTitle(json.gvname, for: .normal)
                     let grvurl = URL(string: json.gvmallimage)!
                     if let datagr = try? Data(contentsOf: grvurl){
+                        importer.image = datagr
                         self.cards[0].setBackgroundImage(UIImage(data: datagr), for: .normal)
                     }
                     
@@ -125,6 +126,7 @@ class Malls: UIViewController {
                     self.cards[1].setTitle(json.mmname, for: .normal)
                     let msxurl = URL(string: json.mmmallimage)!
                     if let datamm = try? Data(contentsOf: msxurl){
+                        importer.image = datamm
                         self.cards[1].setBackgroundImage(UIImage(data: datamm), for: .normal)
                     }
                     
@@ -132,6 +134,7 @@ class Malls: UIViewController {
                     self.cards[2].setTitle(json.apname, for: .normal)
                     let ansurl = URL(string: json.apmallimage)!
                     if let dataap = try? Data(contentsOf: ansurl){
+                        importer.image = dataap
                         self.cards[2].setBackgroundImage(UIImage(data: dataap), for: .normal)
                     }
                     
@@ -139,6 +142,7 @@ class Malls: UIViewController {
                     self.cards[3].setTitle(json.oaname, for: .normal)
                     let omxurl = URL(string: json.oamallimage)!
                     if let dataoa = try? Data(contentsOf: omxurl){
+                        importer.image = dataoa
                         self.cards[3].setBackgroundImage(UIImage(data: dataoa), for: .normal)
                     }
                     self.loder.stopAnimating()
@@ -162,12 +166,14 @@ class Malls: UIViewController {
                     self.cards[0].setTitle(json.dmname, for: .normal)
                     let dmurl = URL(string: json.dmmallimage)!
                     if let datadm = try? Data(contentsOf: dmurl){
+                        importer.image = datadm
                         self.cards[0].setBackgroundImage(UIImage(data: datadm), for: .normal)
                     }
                     
                     self.cards[1].setTitle(json.lcname, for: .normal)
                     let lcurl = URL(string: json.lcmallimage)!
                     if let datalc = try? Data(contentsOf: lcurl){
+                        importer.image = datalc
                         self.cards[1].setBackgroundImage(UIImage(data: datalc), for: .normal)
                         
                     }
@@ -175,6 +181,7 @@ class Malls: UIViewController {
                     self.cards[2].setTitle(json.ggname, for: .normal)
                     let ggurl = URL(string: json.ggmallimage)!
                     if let datagg = try? Data(contentsOf: ggurl){
+                        importer.image = datagg
                         self.cards[2].setBackgroundImage(UIImage(data: datagg), for: .normal)
                         
                     }
@@ -182,6 +189,7 @@ class Malls: UIViewController {
                     self.cards[3].setTitle(json.gpname, for: .normal)
                     let gpurl = URL(string: json.gpmallimage)!
                     if let datagp = try? Data(contentsOf: gpurl){
+                        importer.image = datagp
                         self.cards[3].setBackgroundImage(UIImage(data: datagp), for: .normal)
                     }
                     self.loder.stopAnimating()
@@ -206,12 +214,14 @@ class Malls: UIViewController {
                     self.cards[0].setTitle(json.vsname, for: .normal)
                     let vsurl = URL(string: json.vsmallimage)!
                     if let datavs = try? Data(contentsOf: vsurl){
+                        importer.image = datavs
                         self.cards[0].setBackgroundImage(UIImage(data: datavs), for: .normal)
                     }
                     
                     self.cards[1].setTitle(json.tcname, for: .normal)
                     let tcurl = URL(string: json.tcmallimage)!
                     if let datatc = try? Data(contentsOf: tcurl){
+                        importer.image = datatc
                         self.cards[1].setBackgroundImage(UIImage(data: datatc), for: .normal)
                         
                     }
@@ -219,6 +229,7 @@ class Malls: UIViewController {
                     self.cards[2].setTitle(json.ccname, for: .normal)
                     let ccurl = URL(string: json.ccmallimage)!
                     if let datacc = try? Data(contentsOf: ccurl){
+                        importer.image = datacc
                         self.cards[2].setBackgroundImage(UIImage(data: datacc), for: .normal)
                         
                     }
@@ -226,18 +237,21 @@ class Malls: UIViewController {
                     self.cards[3].setTitle(json.cmname, for: .normal)
                     let cmurl = URL(string: json.cmmallimage)!
                     if let datacm = try? Data(contentsOf: cmurl){
+                        importer.image = datacm
                         self.cards[3].setBackgroundImage(UIImage(data: datacm), for: .normal)
                     }
                     
                     self.cards[4].setTitle(json.dsname, for: .normal)
                     let dsurl = URL(string: json.dsmallimage)!
                     if let datads = try? Data(contentsOf: dsurl){
+                        importer.image = datads
                         self.cards[4].setBackgroundImage(UIImage(data: datads), for: .normal)
                     }
                     
                     self.cards[5].setTitle(json.amname, for: .normal)
                     let amurl = URL(string: json.ammallimage)!
                     if let dataam = try? Data(contentsOf: amurl){
+                        importer.image = dataam
                         self.cards[5].setBackgroundImage(UIImage(data: dataam), for: .normal)
                         
                     }
@@ -245,6 +259,7 @@ class Malls: UIViewController {
                     self.cards[6].setTitle(json.pmname, for: .normal)
                     let pmurl = URL(string: json.pmmallimage)!
                     if let datapm = try? Data(contentsOf: pmurl){
+                        importer.image = datapm
                         self.cards[6].setBackgroundImage(UIImage(data: datapm), for: .normal)
                         
                     }
@@ -252,6 +267,7 @@ class Malls: UIViewController {
                     self.cards[7].setTitle(json.scname, for: .normal)
                     let scurl = URL(string: json.scmallimage)!
                     if let datasc = try? Data(contentsOf: scurl){
+                        importer.image = datasc
                         self.cards[7].setBackgroundImage(UIImage(data: datasc), for: .normal)
                     }
                     self.loder.stopAnimating()
@@ -273,6 +289,8 @@ class Malls: UIViewController {
         
     }
     
-    
+    struct importer {
+        static var image = Data()
+    }
 }
 
