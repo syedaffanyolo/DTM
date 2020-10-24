@@ -90,7 +90,7 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     struct myGlobalVar {
         static var region = String()
     }
-    
+    //uiyfu
 }
 
 
