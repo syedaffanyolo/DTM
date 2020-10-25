@@ -9,7 +9,7 @@ import Foundation
 
 
 
-
+// our api structuring 
 struct grNoida : Codable{
     
     let gvname : String
